@@ -178,12 +178,6 @@ ul {
     border-bottom: 0;
   }
 
-  .footer {
-    background-color: rgb(54, 54, 54);
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: white;
-  }
+
 }
+
