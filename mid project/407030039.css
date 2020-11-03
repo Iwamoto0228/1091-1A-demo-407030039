@@ -1,122 +1,179 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: rgba(162, 213, 233, 0.3);
-    color: black;
-    font-size: 15px;
-    line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(162, 213, 233, 0.25);
+  color: black;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(32, 32, 32);
+  text-decoration: none;
+  color: rgb(32, 32, 32);
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
+}
+
+/* nav-btn */
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  display: none;
 }
 
 /* nav */
 
 .main-nav {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    padding: 20px 0;
-    font-size: 13px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
 }
 
-.house-icon{
-    font-size: 250%;
+.house-icon {
+  font-size: 250%;
+  padding: 5px;
 }
 
-.main-nav ul{
-    display: flex;
-    padding: 15px 15px 5px 15px;
+.house-icon:hover {
+  background-color: rgba(99, 99, 99, 0.74);
+}
+
+.main-nav ul {
+  display: flex;
+  padding: 15px 15px 5px 15px;
 }
 
 .main-nav ul li {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .main-nav ul li a {
-    padding-bottom: 4px;
+  padding-bottom: 4px;
 }
 
 .main-nav ul li a:hover {
-    border-bottom: 2px solid rgb(32,32,32)
+  border-bottom: 2px solid rgb(32, 32, 32);
 }
 
 /* Index */
 
 .Index {
-    border-radius: 10px;
-    width: 100%;
-    height: 350px;
-    background:-webkit-linear-gradient(300deg,rgba(255,255,255,1),rgba(255,255,255,0)),url('./imgs/IMG-4343.JPG') center center no-repeat;
-    background-size: cover;
-    margin: 10px 0 25px;
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+  background: -webkit-linear-gradient(
+      300deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    ),
+    url('./imgs/IMG-4343.JPG') center center no-repeat;
+  background-size: cover;
+  margin: 10px 0 25px;
 }
 
 .Index-contect {
-    width: 40%;
-    padding: 30px 0px 0px 20px;
+  width: 40%;
+  padding: 30px 0px 0px 20px;
 }
 
-.Index p {
-    margin: 10px 0 40px;
+.Index-contect h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.Index-contect p {
+  padding: 0 0 0 2px;
 }
 
 /* Media */
 
 .media {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    height: 250px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  height: 250px;
+  width: 100%;
 }
 
 .media1 {
-    border-radius: 10px;
-    border: 2px solid rgb(97, 168, 115);
+  border-radius: 10px;
+  border: 2px solid rgb(97, 168, 115);
 }
 .media2 {
-    border-radius: 10px;
-    border: 2px solid rgb(97, 168, 115);
+  border-radius: 10px;
+  border: 2px solid rgb(97, 168, 115);
 }
-
 
 /* footer */
 .footer {
-    background-color: rgb(54, 54, 54);
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: white;
+  background-color: rgb(54, 54, 54);
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
 }
 
 .container-foot {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 .footer-links {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .information {
-    margin: 10px 0;
-    font-size: 10px;
+  margin: 10px 0;
+  font-size: 10px;
 }
+
+/* @media control */
+
+@media (max-width: 1000px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+  }
+
+  .main-nav ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+  }
+  .main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
