@@ -162,7 +162,7 @@ ul {
     height: 100%;
     opacity: 0.9;
     padding: 30px;
-    transform: translateX(-500px);
+    transform: translateX(-900px);
   }
 
   .main-nav ul.main-menu.show {
