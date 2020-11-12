@@ -1,117 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: rgba(162, 213, 233, 0.25);
-  color: black;
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(32, 32, 32);
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  width: 90%;
+/* index */
+table{
+  width: 800px;
+  height: 600px;
+  table-layout: fixed;
   margin: auto;
+  margin-top: 40px;
+  
 }
 
-/* nav-btn */
-.menu-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  z-index: 2;
-  display: none;
-}
-
-/* nav */
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  padding: 20px 0;
-  font-size: 13px;
-}
-
-.house-icon {
-  font-size: 250%;
+table,
+tr,
+td{
+  border: 2px solid white;
+  border-collapse: collapse;
   padding: 5px;
 }
 
-.house-icon:hover {
-  background-color: rgba(99, 99, 99, 0.74);
-}
-
-.main-nav ul {
-  display: flex;
-  padding: 15px 15px 5px 15px;
-}
-
-.main-nav ul li {
-  padding: 0 15px;
-}
-
-.main-nav ul li a {
-  padding-bottom: 4px;
-}
-
-.main-nav ul li a:hover {
-  border-bottom: 2px solid rgb(32, 32, 32);
-}
-/* index */
-table,
-tr,
-td {
-  border: 2px solid white;
-  border-collapse: collapse;
-}
-
 .name {
-  background: rgb(47, 46, 148);
+  background: #065c6f;
   color: white;
-  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .article {
   color: white;
-  background: rgb(20, 29, 151);
+  background:#065c6f;
+  text-align: center;
+
 }
 
 .day {
-  background: rgb(111, 195, 201);
+  background: #64958f;
+  text-align: center;
+
 }
 
 .number {
-  background: rgb(184, 107, 6);
+  background: rgb(172, 141, 173);
+  width: 50px;
 }
 
 .time {
-  background: rgb(241, 188, 118);
+  background: rgb(157, 154, 204);
+  width: 150px;
 }
 
 .desk {
-  background: rgb(62, 182, 78);
+  background:#faf3dd;
+  text-align: center;
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .contact {
-  background: rgb(128, 23, 189);
+  color: #f2f2f2;
+  background: #065c6f;
 }
 
 .contact-info {
-  background: rgb(128, 128, 128);
+  background: rgb(194, 194, 194);
 }
 
 /* footer */
@@ -136,40 +87,4 @@ td {
 .information {
   margin: 10px 0;
   font-size: 10px;
-}
-
-/* @media control */
-
-@media (max-width: 1000px) {
-  .menu-btn {
-    display: block;
-  }
-
-  .main-nav ul.main-menu {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #f2f2f2;
-    width: 50%;
-    height: 100%;
-    opacity: 0.9;
-    padding: 30px;
-    transform: translateX(-900px);
-  }
-
-  .main-nav ul.main-menu.show {
-    transform: translateX(-20px);
-  }
-
-  .main-nav ul.main-menu li {
-    padding: 10px;
-    border-bottom: 2px solid #ccc;
-    font-size: 14px;
-  }
-  .main-nav ul.main-menu li:last-child {
-    border-bottom: 0;
-  }
-
-
 }
