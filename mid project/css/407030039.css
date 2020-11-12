@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(162, 213, 233, 0.25);
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* nav-btn */
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+  }
+  
+  /* nav */
+  
+  .main-nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+  }
+  
+  .house-icon {
+    font-size: 250%;
+    padding: 5px;
+  }
+  
+  .house-icon:hover {
+    background-color: rgba(99, 99, 99, 0.74);
+  }
+  
+  .main-nav ul {
+    display: flex;
+    padding: 15px 15px 5px 15px;
+  }
+  
+  .main-nav ul li {
+    padding: 0 15px;
+  }
+  
+  .main-nav ul li a {
+    padding-bottom: 4px;
+  }
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid rgb(32, 32, 32);
+  }
+
+/* footer */
+.footer {
+    background-color: rgb(54, 54, 54);
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+  }
+  
+  .container-foot {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .footer-links {
+    font-size: 25px;
+  }
+  
+  .information {
+    margin: 10px 0;
+    font-size: 10px;
+  }
+  
+  /* @media control */
+  
+  @media (max-width: 1000px) {
+    .menu-btn {
+      display: block;
+    }
+  
+    .main-nav ul.main-menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #f2f2f2;
+      width: 50%;
+      height: 100%;
+      opacity: 0.9;
+      padding: 30px;
+      transform: translateX(-900px);
+    }
+  
+    .main-nav ul.main-menu.show {
+      transform: translateX(-20px);
+    }
+  
+    .main-nav ul.main-menu li {
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+      font-size: 14px;
+    }
+    .main-nav ul.main-menu li:last-child {
+      border-bottom: 0;
+    }
+  
+  
+  }
