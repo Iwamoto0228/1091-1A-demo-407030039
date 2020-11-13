@@ -9,12 +9,10 @@ table{
   td{
     border: 2px solid white;
     border-collapse: collapse;
+    padding: 5px;
   }
-  
+
   img {
       width: 75px;
   }
 
-  .article {
-      width: 700px;
-  }
