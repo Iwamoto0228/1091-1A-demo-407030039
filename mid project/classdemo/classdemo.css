@@ -15,3 +15,26 @@
 .github-icon{
   opacity: 0.7;
 }
+
+.demo{
+  margin: 20px 10px;
+  display: flex;
+}
+
+.weeklist {
+  width: 18%;
+}
+
+.weeklist ul li{
+  padding: 8px;
+}
+
+.weeklist ul li:hover {
+  border-bottom: 2px solid rgba(83, 83, 83, 0.25);
+}
+
+#playarea {
+  width: 80%;
+  border: 2px solid rgb(119, 119, 119);
+  background: rgb(125, 179, 165);
+}
